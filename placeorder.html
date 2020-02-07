@@ -1,0 +1,81 @@
+<head>
+    <style>
+
+        .l1 {
+            float: left;
+            width: 200px;
+            margin: 0 20px 0 0;
+            text-align: left;
+        }
+
+        .a {
+            width: 200px;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        textarea {
+            width: 450px;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        label {
+        }
+    </style>
+</head>
+<body>
+    <form action="vieworder.html" onSubmit="return addOrderFormSubmit()">
+            <center>
+                <label>Gift Card Amount</label>
+                <input class="a" type="number" name="n1" />
+                <input class="a" type="number" name="n2" /><br /><br />
+
+                <label>Receipent Name</label>
+                <input class="a" type="text" name="r1" />
+                <input class="a" type="text" name="r2" />
+
+                <fieldset class="a" style="width:450px;">
+                    <legend>Shipping Address</legend>
+                    <br />
+                    <textarea></textarea><br />
+                    <lable class="l1">Street Address</lable><br /><br />
+                    <label class="l1">
+                        <input class="a" type="text" id="city" />
+                        <span>City</span>
+                    </label>
+                    <label class="l1">
+                        <input class="a" type="text" id="state" />
+                        <span>State</span>
+                    </label><br /><br /><br />
+                    <label class="l1">
+                        <select id="country" class="a" name="country">
+                            <option value="">Select Country</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="India">India</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <span>Country</span>
+                    </label>
+                    <label for="pincode" class="l1">
+                        <input class="a" type="number" id="pincode" />
+                        <span>Pincode</span>
+                    </label>
+                </fieldset>
+                <br />
+
+                <label>Buyer's Name</label>
+                <input type="text" class="a" />
+                <input type="text" class="a" /><br /><br />
+                <label>Phone Number</label>
+                <input style="width:35px" class="a" value="+91" readonly="readonly" /><br /><br />
+                <label>Email:</label>
+                <input type="text" class="a" /><br /><br />
+                <button>Place Order</button>
+            </center>
+        </form>
+</body>
